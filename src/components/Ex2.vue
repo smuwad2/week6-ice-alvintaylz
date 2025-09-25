@@ -11,8 +11,8 @@
 </script>
 
 <template>
+
     <!-- add code here -->
-    <!-- : is a short-hand notion of v-bind -->
-    <img v-bind:src="myImg" :width="width" :height="height" />
-   
+     <!-- : is a shorthand notation for v-bind -->
+   <img :src="myImg" :width="width" :height="height" />
 </template>

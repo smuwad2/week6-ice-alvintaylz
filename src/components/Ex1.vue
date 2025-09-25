@@ -3,15 +3,16 @@
         // Add Code Here
         data() {
             return {
-                message : 'Choose your favorite fruit:',
-                // we can also do this with an array. try it out!
-                fruit1 : 'apple',
-                fruit2 : 'orange',
-                fruit3 : 'peach',
-                fruits : ['apple', 'orange', 'peach']  // challenge: use array
+                message: "Choose your favourite fruit:",
+                fruit1: "apple",
+                fruit2: "orange",
+                fruit3: "peach",
+
+                // challenge: use array
+                fruits: ["apple", "orange", "peach"]
             }
         }
-       
+        
     }
 </script>
 
@@ -21,11 +22,11 @@
         {{ fruit1 }} <input type="radio" name="fruit">
         {{ fruit2 }} <input type="radio" name="fruit">
         {{ fruit3 }} <input type="radio" name="fruit">
-        <h3> Using Array </h3>
+        <h3>Using Array</h3>
         {{ message }} </br>
-        <div v-for="fruit in fruits">
+        <span v-for="fruit in fruits">
             {{ fruit }} <input type="radio" name="fruit">
-        </div>
+        </span>
     </div>
 </template>
 

@@ -18,10 +18,10 @@ test('ex5_changetheme', async ({mount})=> {
   await component.getByRole('button').nth(0).click(); // Light theme
   await expect(component.locator('div.preview-card')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
   await expect(component.locator('div.preview-card')).toHaveCSS('color', 'rgb(0, 0, 0)');
-  await component.getByRole('button').nth(0).click(); // Neon theme
+  await component.getByRole('button').nth(1).click(); // Neon theme
   await expect(component.locator('div.preview-card')).toHaveCSS('background-color', 'rgb(57, 255, 20)');
   await expect(component.locator('div.preview-card')).toHaveCSS('color', 'rgb(0, 0, 0)');
-  await component.getByRole('button').nth(0).click(); // Dark theme
+  await component.getByRole('button').nth(2).click(); // Dark theme
   await expect(component.locator('div.preview-card')).toHaveCSS('background-color', 'rgb(51, 51, 51)');
   await expect(component.locator('div.preview-card')).toHaveCSS('color', 'rgb(255, 255, 255)');
 });
